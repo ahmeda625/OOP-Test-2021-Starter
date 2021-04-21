@@ -1,6 +1,9 @@
 package ie.tudublin;
 
+import processing.data.TableRow;
+
 public class Note {
+    
     private String note;
     private int duration;
 }
@@ -23,7 +26,7 @@ public void setDuration(int duration) {
 
 public Note(int duration, int i) {
     this.duration = duration;
-    this.note = i; 
+    this.note = note; 
 }
 
 @Override
