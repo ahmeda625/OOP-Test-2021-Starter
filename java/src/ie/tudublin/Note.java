@@ -1,8 +1,16 @@
 package ie.tudublin;
 
 public class Note {
+    private String note;
     private int duration;
-    private char note;
+}
+
+public String getNote() {
+    return note;
+}
+
+public void setNote(String note) {
+    this.note = note;
 }
 
 public int getDuration() {
@@ -13,15 +21,12 @@ public void setDuration(int duration) {
     this.duration = duration;
 }
 
-public char getNote() {
-    return note;
-}
-
-public void setNote(char note) {
-    this.note = note;
-}
-
-public Note(int duration, char note) {
+public Note(int duration, int i) {
     this.duration = duration;
-    this.note = note; 
+    this.note = i; 
+}
+
+@Override
+public String toString() {
+    return "Note [duration=" + duration + ", note=" + note + "]";
 }
